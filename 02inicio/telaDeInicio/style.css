@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid;
+    border-color: rgb(73,22,0)
+    linear-gradient(90deg, rgba(73,22,0,0.8155637254901961) 18%, rgba(175,76,15,0.835171568627451) 43%, rgba(205,132,12,0.8603816526610644) 63%, rgba(255,235,0,1) 100%);;
+}
+
+img {
+    width: 181px;
+    height: 41px;
+    padding: 10px
+} 
+
+.boxUsuario img {
+    background-color: #F9E423;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+} 
+
+.boxUsuario {
+    width: 185px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bigDiv {
+    height: 100%;
+    display: flex;
+}
+
+.boxYellow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F9E423;
+    /* border-left: 8px solid #F9E423; */
+    width: 230px;
+    height: 579px;
+}
+
+.options, .optionsTwo { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+#inicio:hover, #usuarios:hover, #emocionomentro:hover, #sair:hover, #perfil:hover {
+    background-color: #FAA61A;
+    border-left: 8px solid #F48221;
+    color: white;
+}
+
+.teste {
+    display: flex;
+}
+
+.optionsTwo {
+  margin-bottom: 15px;
+}
+
+.options a,.optionsTwo a, .usuarios{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #AA6F34;
+}
+
+.usuarios {
+    flex-direction: column;
+    align-items: start;
+}
+
+
+a img, .usuarios img {
+    width: 30px;
+    height: 25px;
+}
+
+.subMenu {
+    display: none;
+}
+
+
+.openSubMenu {
+    display: block;
+}
+
+.other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 335px;
+}
+
+.text h2 {
+    color: #AA6F34;
+}
+
+.balao {
+    align-self: flex-end;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+}
+
+.retangulo {
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 5px 0px rgba(104, 104, 104, 0.20);
+}
+
+#chat {
+    background-color: #F9E423;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
