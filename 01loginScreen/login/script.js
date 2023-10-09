@@ -19,10 +19,10 @@ form.addEventListener('submit',(event) => {
         labelSenha.classList.add('okLabel')
         labelEmail.classList.add('okLabel')
 
-        window.location = 'file:///C:/Users/Ana%20Carla/iniciando/MODULO1/ProjetoFinalM1/02inicio/todoCabecario/index.html'
+        window.location = 'file:///C:/Users/Ana%20Carla/iniciando/MODULO1/ProjetoFinalM1/02inicio/todoCabecario/HTML/index.html'
     }
 })
 
 const goCadastro = () => {
-    window.location = 'file:///C:/Users/Ana%20Carla/iniciando/MODULO1/ProjetoFinalM1/01loginScreen/cadastrese/cadastro.html'
+    window.location = 'file:///C:/Users/Ana%20Carla/iniciando/MODULO1/ProjetoFinalM1/01loginScreen/cadastrese/HTML/cadastro.html'
 }
