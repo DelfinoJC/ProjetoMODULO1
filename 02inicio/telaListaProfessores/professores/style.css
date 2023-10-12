@@ -227,6 +227,11 @@ header img {
 
 .acoes {
   display: flex;
+  gap: 2px;
+}
+
+.acoes img {
+  width: 18px;
 }
 
 .botaoAcoesTbody {
