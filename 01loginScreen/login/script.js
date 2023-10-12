@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
     labelEmail.classList.add("okLabel");
 
     window.location =
-      "file:///C:/Users/Ana%20Carla/iniciando/MODULO1/ProjetoFinalM1/02inicio/todoCabecario/index.html";
+      "file:///C:/Users/Ana%20Carla/iniciando/MODULO1/ProjetoFinalM1/02inicio/01.todoCabecario/index.html";
   }
 });
 
