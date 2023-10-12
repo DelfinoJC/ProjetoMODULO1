@@ -3,7 +3,7 @@
 * {
   font-family: "Nunito", sans-serif;
 }
-
+ 
 body {
   border: 0;
   margin: 0;
@@ -11,7 +11,7 @@ body {
   background-color: #f5f4f9;
 }
 
-header {
+header { 
   display: flex;
   justify-content: space-between;
   height: 65px;
@@ -216,18 +216,19 @@ header img {
 
 .table thead th {
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .table tbody td {
   border-radius: 5px;
   background-color: white;
-  padding: 13px;
+  text-align: center;
 }
 
 .acoes {
   display: flex;
-  gap: 2px;
+  justify-content: center;
+  gap: 3px;
 }
 
 .acoes img {
@@ -242,6 +243,7 @@ header img {
   align-items: center;
   border-radius: 50%;
   background: #004CE8;
+  cursor: pointer;
 }
 
 .botaoAcoesTbodyDois {
@@ -252,4 +254,46 @@ header img {
   align-items: center;
   border-radius: 50%;
   background: #FF3333;
+  cursor: pointer;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO TOGGLE ----- ON/OFF */
+
+.slider {
+  background: #FF3333;
+  border-radius: 20px;
+  width: 49px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  margin-top: 25px;
+  margin-left: 75%;
+
+}
+
+.button {
+  background: white;
+  border: none;
+  width: 21px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 2px;
+  left: 3px;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+}
+
+.toggleInputButton:checked ~ .slider {
+  background: #00C247;
+}
+
+.toggleInputButton:checked ~ .slider > .button {
+  background: white;
+  left: 23px;
+}
+
+.toggleInputButton {
+  display: none;
 }

@@ -10,3 +10,7 @@ const apareceSubMenu = () => {
         usuario.classList.remove('displayColor')
     }
 }
+
+const irParaNovoProf = () => {
+    window.location = 'file:///C:/Users/Ana%20Carla/iniciando/MODULO1/ProjetoFinalM1/02inicio/telaListaProfessores/novoProfessor/novoProfessor.html'
+}

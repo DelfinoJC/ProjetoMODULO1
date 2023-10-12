@@ -6,7 +6,7 @@
     <link href="style.css" rel="stylesheet" />
     <script src="app.js" defer></script>
     <title>Professores</title>
-  </head>
+  </head> 
   <body>
     <header>
       <div><img src="../../../01loginScreen/login/Frame 8804.png" /></div>
@@ -82,6 +82,7 @@
           <input placeholder="Pesquise uma palavra-chave" id="pesquisaProf" class="inputPesquisa" />
 
           <button
+            onclick="irParaNovoProf()"
             class="botaoNovoUsuario"
             id="novoProfessor"
           >
@@ -103,7 +104,16 @@
                 <td>José Carlos</td>
                 <td>Matemática</td>
                 <td>Professor</td>
-                <td>true</td>
+                <td>
+                  <div class="toggleContainer">
+                    <label>
+                      <input type="checkbox" class="toggleInputButton" />
+                      <div class="slider">
+                        <button class="button"></button>
+                      </div>
+                    </label>
+                  </div>
+                </td>
                 <td>
                   <div class="acoes">
                     <div class="botaoAcoesTbody">
