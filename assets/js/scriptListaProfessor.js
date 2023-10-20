@@ -49,7 +49,7 @@ const selectionProf = async (professores) => {
 };
 
 const getProfs = async () => {
-  const url = await fetch("http://localhost:3000/professores");
+  const url = await fetch("https://db-json-d0xw.onrender.com/professores");
   const professores = await url.json();
   selectionProf(professores);
 };
@@ -57,7 +57,7 @@ const getProfs = async () => {
 getProfs();
 
 const excluirProfessor = async (id) => {
-  await fetch(`http://localhost:3000/professores/${id}`, { method: "DELETE" });
+  await fetch(`https://db-json-d0xw.onrender.com/professores/${id}`, { method: "DELETE" });
   window.location.reload();
 };
 
@@ -66,7 +66,7 @@ const pesquisaProf = async () => {
   const content = document.getElementById("contentProf");
   const nomeInputPesquisa = document.getElementById("pesquisaProf").value;
   const outraUrl = await fetch(
-    `http://localhost:3000/professores?nome_like=${nomeInputPesquisa}`
+    `https://db-json-d0xw.onrender.com/professores?nome_like=${nomeInputPesquisa}`
   );
   const professorAcionado = await outraUrl.json();
   exibirProfessor(professorAcionado);

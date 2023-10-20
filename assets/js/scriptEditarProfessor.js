@@ -12,7 +12,7 @@ const pegaDiretorio = () => {
 };
 
 const buscarProfessor = async (id) => {
-  const response = await fetch(`http://localhost:3000/professores/${id}`);
+  const response = await fetch(`https://db-json-d0xw.onrender.com/professores/${id}`);
   const professor = await response.json();
   return professor;
 };
@@ -44,7 +44,7 @@ const editarProfessor = async () => {
     ativo,
   };
 
-  await fetch(`http://localhost:3000/professores/${idProfessor}`, {
+  await fetch(`https://db-json-d0xw.onrender.com/professores/${idProfessor}`, {
     method: "PUT",
     headers: {
       Accept: "application/json, text/plain, */*",

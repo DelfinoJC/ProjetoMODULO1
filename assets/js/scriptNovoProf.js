@@ -18,7 +18,7 @@ const cadastrarProfessor = async () => {
         ativo
     }
 
-    const dadoEspecifico = await fetch('http://localhost:3000/professores',{
+    const dadoEspecifico = await fetch('https://db-json-d0xw.onrender.com/professores',{
       method:'POST',  
       headers:{
         'Accept': 'application/json, text/plain, */*',

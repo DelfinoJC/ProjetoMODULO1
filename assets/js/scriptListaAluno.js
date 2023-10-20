@@ -40,7 +40,7 @@ const selectionAlunos = async (alunos) => {
 }
 
 const getAlunos = async () => {
-    const url = await fetch('http://localhost:3000/alunos')
+    const url = await fetch('https://db-json-d0xw.onrender.com/alunos')
     const alunos = await url.json()
     selectionAlunos(alunos)
 }
@@ -48,7 +48,7 @@ const getAlunos = async () => {
 getAlunos()
 
 const excluirAluno = async (id) => {
-  await fetch(`http://localhost:3000/alunos/${id}`, {method:'DELETE'})
+  await fetch(`https://db-json-d0xw.onrender.com/alunos/${id}`, {method:'DELETE'})
   window.location.reload()
 }
 
@@ -58,7 +58,7 @@ const pesquisaProf = async () => {
   const content = document.getElementById("contentAluno");
   const nomeInputPesquisa = document.getElementById("pesquisaAluno").value;
   const outraUrl = await fetch(
-    `http://localhost:3000/alunos?nome_like=${nomeInputPesquisa}`
+    `https://db-json-d0xw.onrender.com/alunos?nome_like=${nomeInputPesquisa}`
   );
   const alunoAcionado = await outraUrl.json();
   exibirAluno(alunoAcionado);

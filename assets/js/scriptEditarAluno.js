@@ -12,7 +12,7 @@ const voltarParaLista = () => {
   };
   
   const buscarAluno = async (id) => {
-    const response = await fetch(`http://localhost:3000/alunos/${id}`);
+    const response = await fetch(`https://db-json-d0xw.onrender.com/alunos/${id}`);
     const professor = await response.json();
     return professor;
   };
@@ -43,7 +43,7 @@ const voltarParaLista = () => {
       ativo,
     };
   
-    await fetch(`http://localhost:3000/professores/${idProfessor}`, {
+    await fetch(`https://db-json-d0xw.onrender.com/professores/${idProfessor}`, {
       method: "PUT",
       headers: {
         Accept: "application/json, text/plain, */*",
