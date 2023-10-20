@@ -1,0 +1,32 @@
+{
+  "professores": [
+    {
+      "nome": "Pedro",
+      "disciplina": "Português",
+      "perfil": "Professor",
+      "ativo": false,
+      "id": 2
+    },
+    {
+      "nome": "Braulio",
+      "disciplina": "Sociologia",
+      "perfil": "Professor",
+      "ativo": true,
+      "id": 5
+    }
+  ],
+  "alunos": [
+    {
+      "nome": "Jhonathan ",
+      "turma": "Turma 4",
+      "ativo": false,
+      "id": 1
+    },
+    {
+      "nome": "Verônica",
+      "turma": "Turma 6",
+      "ativo": true,
+      "id": 2
+    }
+  ]
+}
