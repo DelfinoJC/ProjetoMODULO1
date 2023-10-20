@@ -13,6 +13,13 @@
       "perfil": "Professor",
       "ativo": true,
       "id": 5
+    },
+    {
+      "nome": "Arthur Astar",
+      "disciplina": "Programação",
+      "perfil": "Professor",
+      "ativo": true,
+      "id": 6
     }
   ],
   "alunos": [
