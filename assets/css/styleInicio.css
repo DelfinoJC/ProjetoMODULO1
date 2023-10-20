@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f4f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  background-color: white;
+}
+
+header img {
+  width: 181px;
+  height: 41px;
+  padding: 10px;
+}
+
+.boxUsuario img {
+  background-color: #f9e423;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.boxUsuario {
+  width: 185px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bordas {
+  display: flex;
+}
+
+.bordaMarrom {
+  width: 20%;
+  height: 3px;
+  background-color: #aa6f34;
+}
+
+.bordaMarrom2 {
+  width: 20%;
+  height: 3px;
+  background-color: #d2772e;
+}
+
+.bordaLaranja {
+  width: 20%;
+  height: 3px;
+  background-color: #f48221;
+}
+
+.bordaLaranja2 {
+  width: 20%;
+  height: 3px;
+  background-color: #faa61a;
+}
+
+.bordaAmarela {
+  width: 20%;
+  height: 3px;
+  background-color: #f9e423;
+}
+
+.grandeDiv {
+  display: flex;
+}
+
+.boxAmarelo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9e423;
+  /* border-left: 8px solid #F9E423; */
+  width: 230px;
+  height: 583px;
+}
+
+.iconMenuAmarelo {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  color: #aa6f34;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.iconMenuAmarelo:hover {
+  background-color: #faa61a;
+  border-left: #f48221 4px solid;
+  color: white;
+  transition: 0.3s;
+}
+
+.iconMenuAmarelo img {
+  width: 27px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.displayColor {
+  background-color: #faa61a;
+  border-left: #f48221 4px solid;
+  color: white;
+  transition: 0.3s;
+}
+
+#destinoOpcional {
+  display: none;
+  transition: 0.8s;
+}
+
+.classOptionMenu {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faa61a;
+  border-left: #f48221 4px solid;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.classOptionMenu:hover {
+  background-color: #f48221;
+  transition: 0.3s;
+}
+
+.cima {
+  margin-top: 20px;
+}
+
+.baixo {
+  margin-bottom: 20px;
+}
+
+/* CONTEÚDO PRINCIPAL DA TELA */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 335px;
+}
+
+.text h2 {
+  color: #aa6f34;
+}
+
+/* BALÃO DE "FALE CONOSCO" NO CANTO DA TELA */
+.balao {
+  align-self: flex-end;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  margin-left: 90px;
+}
+
+.retangulo {
+  width: 90px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 5px 0px rgba(104, 104, 104, 0.2);
+}
+
+.balaoAmarelo {
+  background-color: #f9e423;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#chat {
+  width: 35px;
+  height: 35px;
+}
