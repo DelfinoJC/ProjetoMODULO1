@@ -247,6 +247,13 @@ form {
   border: 1px solid #E0E0E0;
 } 
 
+.novoUsuario option {
+  width: 210px;
+  height: 33px;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+} 
+
 /* ESTILIZAÇÃO DO BOTÃO TOGGLE ----- ON/OFF */
 
 .slider {

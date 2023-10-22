@@ -223,6 +223,8 @@ header img {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  overflow-y: auto;
+  max-height: 420px;
 }
 
 .table {
