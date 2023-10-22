@@ -250,8 +250,7 @@ form {
   cursor: pointer;
   position: relative;
   transition: all 300ms ease-in-out;
-  margin-top: 25px;
-  margin-left: 75%;
+  margin-top: 5px;
 
 }
 

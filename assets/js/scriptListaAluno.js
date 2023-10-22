@@ -2,9 +2,6 @@ const irParaNovoAluno = () => {
     window.location.href = '../pages/novoAluno.html'
 }
 
-const irParaEditarAluno = () => {
-    window.location.href = '../pages/editarAluno.html'
-} 
 
 const selectionAlunos = async (alunos) => {
     const content = document.getElementById('contentAluno')
@@ -98,3 +95,8 @@ function exibirAluno(aluno) {
 
   tbody.innerHTML = contentHTML;
 }
+
+
+const irParaEditarAluno = (id) => {
+  window.location.href = `../pages/editarAluno.html?id=${id}`
+} 

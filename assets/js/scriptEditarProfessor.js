@@ -9,13 +9,14 @@ const pegaDiretorio = () => {
   const id = paramentro.get("id");
   idProfessor = id;
   carregarDados(idProfessor);
+  console.log("aqui está o " + id)
 };
 
 const buscarProfessor = async (id) => {
   const response = await fetch(`https://db-json-d0xw.onrender.com/professores/${id}`);
   const professor = await response.json();
   return professor;
-};
+}; 
 
 const dadosFormulario = async (professor) => {
   document.getElementById("nome").value = professor.nome;
