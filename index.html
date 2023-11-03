@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./01loginScreen/login/style.css" />
-    <script src="./01loginScreen/login/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/styleLogin.css" />
+    <script src="./assets/js/scriptLogin.js" defer></script>
     <title>Bem-Vindo ao emocionômentro Arnia</title>
   </head>
 
   <body>
     <div class="logoGrande">
       <div class="imgG">
-        <img src="BG.png" alt="" />
+        <img src="./assets/img/BG.png" alt="" />
       </div>
 
       <div class="container">
-
         <div class="import">
           <div>
-            <img src="Frame 8804.png" alt="emocionômentro de grupo" />
+            <img
+              src="./assets/img/Frame 8804.png"
+              alt="emocionômentro de grupo"
+            />
           </div>
 
           <div><h2>Faça seu login</h2></div>
@@ -27,12 +29,21 @@
           <div>
             <div class="positionRelative">
               <label id="labelEmail" for="email">E-mail</label>
-              <input placeholder="Insira seu e-mail" class="todosInput" type="email" name="email" id="email" />
+              <input
+                placeholder="Insira seu e-mail"
+                class="todosInput"
+                type="email"
+                name="email"
+                id="email"
+              />
             </div>
 
             <div class="positionRelative">
-              <label placeholder="Insira sua senha"  id="labelSenha" for="senha">Senha</label>
+              <label id="labelSenha" for="senha"
+                >Senha</label
+              >
               <input
+                placeholder="Insira sua senha"
                 class="todosInput"
                 type="password"
                 name="senha"
@@ -59,7 +70,9 @@
               <p>Ou então</p>
               <div class="linha"></div>
             </div>
-            <button onclick="goCadastro()" class="botaoVerde" type="submit">Cadastre-se</button>
+            <button onclick="goCadastro()" class="botaoVerde" type="submit">
+              Cadastre-se
+            </button>
           </div>
         </form>
       </div>

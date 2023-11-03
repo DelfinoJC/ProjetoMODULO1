@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/styleListaProfessor.css" rel="stylesheet" />
+    <script src="../assets/js/scriptMenuLateral.js" defer></script>
+    <script src="../assets/js/scriptListaProfessor.js" defer></script>
+    <title>Professores</title>
+  </head>
+  <body>
+    <header>
+      <div><img src="../assets/img/Frame 8804.png" /></div>
+
+      <div class="boxUsuario">
+        <div>
+          <img src="../assets/img/user.png" alt="User image" />
+        </div>
+        <div>
+          <h3>José Carlos</h3>
+        </div>
+      </div>
+    </header>
+
+    <div class="bordas">
+      <div class="bordaMarrom"></div>
+      <div class="bordaMarrom2"></div>
+      <div class="bordaLaranja"></div>
+      <div class="bordaLaranja2"></div>
+      <div class="bordaAmarela"></div>
+    </div>
+
+    <div class="grandeDiv">
+      <div class="boxAmarelo">
+        <div class="cima">
+          <a class="iconMenuAmarelo" href="../pages/bemVindo.html"
+            ><img src="../assets/img/home.png" alt="cazinha" /> Inicio</a
+          >
+
+          <div onclick="apareceSubMenu()" id="usuario" class="iconMenuAmarelo">
+            <img src="../assets/img/add-user.png" alt="usuario" />
+            Usuários
+            <img src="../assets/img/rightmarrom.png" alt="usuario" />
+          </div>
+          <div id="destinoOpcional">
+            <a class="classOptionMenu" href="../pages/listaProfessores.html"
+              >Professor</a
+            >
+            <a class="classOptionMenu" href="../pages/alunos.html">Aluno</a>
+          </div>
+
+          <a class="iconMenuAmarelo" href="../pages/emoci.html"
+            ><img src="../assets/img/heart.png" alt="coração" />
+            Emocionômentro</a
+          >
+        </div>
+        <div class="baixo">
+          <a class="iconMenuAmarelo" href=""
+            ><img src="../assets/img/user.png" alt="Perfil" /> Perfil</a
+          >
+
+          <a class="iconMenuAmarelo" href="../index.html"
+            ><img src="../assets/img/logout.png" alt="sair" /> Sair</a
+          >
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="direcionamento">
+          <h2>Usuários</h2>
+          <img src="../assets/img/right (2).png" alt="seta para a direita" />
+          <h2>Professor</h2>
+        </div>
+
+        <div class="palavraChave">
+          <div class="positionRelative">
+            <img src="../assets/img/search.png" 
+            onclick="pesquisaProf()" />
+            <input 
+              placeholder="Pesquise uma palavra-chave"
+              id="pesquisaProf"
+              class="inputPesquisa"
+            />
+          </div> 
+          <button
+            onclick="irParaNovoProf()"
+            class="botaoNovoUsuario"
+            id="novoProfessor"
+          >
+            <img src="../assets/img/Plus 24px.png" /> Novo usuário
+          </button>
+        </div>
+
+        <div class="tabelaPrincipal">
+          <table class="table">
+            <thead>
+              <th>Nome</th>
+              <th>Disciplina</th>
+              <th>Perfil</th>
+              <th>Ativo</th>
+              <th>Ações</th>
+            </thead>
+            <tbody id="contentProf"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

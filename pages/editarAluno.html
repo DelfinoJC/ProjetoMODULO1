@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/styleNovoAluno.css" rel="stylesheet" />
+    <script src="../assets/js/scriptMenuLateral.js" defer></script>
+    <script src="../assets/js/scriptEditarAluno.js" defer></script>
+    <title>Editar Aluno</title>
+  </head>
+  <body>
+    <header>
+      <div><img src="../assets/img/Frame 8804.png" /></div>
+
+      <div class="boxUsuario">
+        <div>
+          <img src="../assets/img/user.png" alt="User image" />
+        </div>
+        <div>
+          <h3>José Carlos</h3>
+        </div>
+      </div>
+    </header>
+
+    <div class="bordas">
+      <div class="bordaMarrom"></div>
+      <div class="bordaMarrom2"></div>
+      <div class="bordaLaranja"></div>
+      <div class="bordaLaranja2"></div>
+      <div class="bordaAmarela"></div>
+    </div>
+
+    <div class="grandeDiv">
+      <div class="boxAmarelo">
+        <div class="cima">
+          <a
+            class="iconMenuAmarelo"
+            href="../pages/bemVindo.html"
+            ><img src="../assets/img/home.png" alt="cazinha" /> Inicio</a
+          >
+
+          <div onclick="apareceSubMenu()" id="usuario" class="iconMenuAmarelo">
+            <img src="../assets/img/add-user.png" alt="usuario" />
+            Usuários
+            <img src="../assets/img/rightmarrom.png" alt="usuario" />
+          </div>
+          <div id="destinoOpcional">
+            <a
+              class="classOptionMenu"
+              href="../pages/listaProfessores.html"
+              >Professor</a
+            >
+            <a class="classOptionMenu" href="../pages/alunos.html">Aluno</a>
+          </div>
+
+          <a class="iconMenuAmarelo" href="../pages/emoci.html"
+            ><img src="../assets/img/heart.png" alt="coração" />
+            Emocionômentro</a
+          >
+        </div>
+        <div class="baixo">
+          <a class="iconMenuAmarelo" href=""
+            ><img src="../assets/img/user.png" alt="Perfil" /> Perfil</a
+          >
+
+          <a class="iconMenuAmarelo" href="../index.html"
+            ><img src="../assets/img/logout.png" alt="sair" /> Sair</a
+          >
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="direcionamento">
+          <div class="setaEsquerda">
+            <img src="../assets/img/left-small.png"
+                alt="seta para a esquerda"
+                onclick="voltarParaLista()">
+            </div>
+          <h2>Editar Usuário</h2>
+          <img
+            src="../assets/img/right (2).png"
+            alt="seta para a direita"
+          />
+          <h2>Aluno</h2>
+        </div>
+
+        <div class="boxNovoUsuario">
+            <div class="contentBox-NU">
+                <h4>Dados do usuario</h4>
+                <form id="formulario">
+                    <div class="novoUsuario">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome"  name="nome">
+                    </div>
+                    <div class="novoUsuario">
+                        <label for="turma">Turma</label>
+                        <input type="text" id="turma"  name="turma">
+                    </div>
+                    <div class="novoUsuario">
+                      <div class="toggleContainer">
+                        <label class="teste" for="botaoTogge"> Ativo</label>
+                        <label>
+                          <input type="checkbox" name="botaoTogge" class="toggleInputButton" id="ativo" />
+                          <div class="slider">
+                            <button class="button"></button>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                </form>
+
+                <button id="salvaUsuario" class="salvar" onclick="editarAluno()">Salvar</button> 
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
